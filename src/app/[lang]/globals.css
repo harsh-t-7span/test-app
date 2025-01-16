@@ -1,0 +1,467 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0% 1;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 339, 100%, 61%, 1;
+    --primary-foreground: 0, 0%, 100%;
+    --secondary: 0, 0%, 0%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 340, 100%, 61%, 0.2;
+    --accent-foreground: 339, 100%, 61%, 0.9;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 0, 0%, 0%, 0.18;
+    --ring: 222.2 84% 4.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+.custom-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.category-detail-slider .slick-dots {
+  bottom: -30px;
+}
+
+@media (min-width: 640px) {
+  .category-detail-slider .slick-track {
+    width: 100px !important;
+  }
+
+  .category-detail-slider .slick-track div {
+    width: fit-content !important;
+    border: 0;
+  }
+}
+@media (max-width: 640px) {
+  .category-detail-slider .slick-slide {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .category-detail-slider .slick-slide:first-child {
+    padding-left: 0; /* Remove left padding for the first slide */
+  }
+
+  .category-detail-slider .slick-slide:last-child {
+    padding-right: 0; /* Remove right padding for the last slide */
+  }
+
+  .category-detail-slider .slick-track,
+  .slick-track {
+    margin: 0;
+  }
+}
+
+.testimonial-slider .slick-dots {
+  bottom: -35px;
+  left: -10px;
+  width: fit-content;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.PhoneInput {
+  border-radius: 6px;
+  padding: 0;
+}
+
+.PhoneInput input {
+  border-radius: 0px;
+  height: 44px;
+  background: #fff;
+  padding: 5px 15px;
+  font-size: 15px;
+  font-weight: 400;
+  box-shadow: none !important;
+}
+
+.PhoneInput input:focus-visible,
+.PhoneInput input:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.PhoneInput .PhoneInputCountry {
+  padding: 0 10px;
+  margin-right: 0;
+}
+
+.specification-form p {
+  margin-bottom: 16px;
+}
+.onlyfaq h3 {
+  margin-top: 0 !important;
+}
+.onlyfaq h4.pb-4 {
+  border-bottom: 1px solid;
+}
+
+.onlyfaq .accordion-trigger {
+  padding: 0px 16px;
+  border: none;
+  background: #ff377d;
+  color: #fff;
+  margin-bottom: 1px;
+}
+
+.onlyfaq .accordion-trigger span h4 {
+  margin: 16px 8px;
+}
+
+.onlyfaq .accordion-trigger .fa-angle-down {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.onlyfaq .accordion-trigger.active .fa-angle-down {
+  transform: rotate(225deg);
+}
+
+.whatsapp {
+  background-color: #29c336;
+  width: 300px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.whatsapp i {
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.mainBnr {
+  background: url('../../asset/bnrbglft.svg') center 0 no-repeat;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+
+.mainBnr img {
+  width: 100%;
+}
+
+.bnrTxt {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.payment-loader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 9;
+}
+.payment-loader span {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+.payment-loader .spinner-border {
+  height: 3.5rem;
+  width: 3.5rem;
+  color: #ff377d;
+}
+
+.input-disabled > input {
+  opacity: 0.5;
+  background-color: white;
+}
+
+.entry-content h3 {
+  line-height: normal !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+  @apply rounded-md !bg-primary;
+}
+
+.word-rotator-title {
+  padding-top: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.word-rotate {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  position: relative;
+  height: 36px; /* Match the height you have specified */
+}
+
+.word-rotate-items {
+  display: block;
+  position: relative;
+  top: 0;
+  animation: word-rotate-animation 6s linear infinite;
+}
+
+.word-rotate-items span {
+  display: block;
+  height: 36px; /* Match the container height */
+  line-height: 36px; /* Center text vertically */
+}
+
+/* Keyframes for the word rotation */
+@keyframes word-rotate-animation {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 0;
+  }
+  33.33% {
+    top: -36px;
+  }
+  58.33% {
+    top: -36px;
+  }
+  66.66% {
+    top: -72px;
+  }
+  91.66% {
+    top: -72px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.tall {
+  background-image: linear-gradient(
+    left,
+    transparent,
+    rgba(0, 0, 0, 0.2),
+    transparent
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    transparent,
+    rgba(0, 0, 0, 0.2),
+    transparent
+  );
+  margin-bottom: 30px;
+  border: 0;
+  height: 1px;
+}
+
+.entry-content h3 {
+  color: #ff377d;
+  font-size: 36px;
+}
+
+.entry-content h4 {
+  font-size: 23px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.entry-content .row:nth-child(6) .row-wrapper .row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.entry-content .col-sm-5 {
+  width: 45%;
+}
+
+.home_middle .col-lg-6 {
+  width: 50%;
+}
+
+.home_middle {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.home_middle .col-lg-6 h4,
+.home_middle .col-lg-6 p {
+  margin-left: -20px !important;
+}
+
+@media (max-width: 768px) {
+  .entry-content h3 {
+    font-size: 26px !important;
+    margin: 20px 0 !important ;
+  }
+
+  .entry-content h4 {
+    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  .entry-content .row:nth-child(6) .row-wrapper .row {
+    display: block;
+  }
+
+  .entry-content .col-sm-5 {
+    width: 100%;
+  }
+
+  .entry-content .col-sm-7 img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home_middle .col-lg-6 {
+    width: 100%;
+  }
+
+  .home_middle {
+    display: block;
+    padding-bottom: 20px;
+  }
+}
+
+.cal-radio > input[type='radio'] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  background-color: white;
+}
+
+.cal-radio > input[type='radio']:checked {
+  background-color: #ff377d;
+  border: 0;
+}
+
+.cal-radio > input[type='radio']:checked::after {
+  content: '✓';
+  color: gray;
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radio-div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-circle {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-div.selected .radio-circle {
+  border-color: transparent;
+}
